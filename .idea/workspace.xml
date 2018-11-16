@@ -2,57 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="035d6444-056e-419c-abe3-9a7ac2741b67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/officalwebsite/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officalwebsite/src/assets/images/QRcode.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officalwebsite/src/assets/images/add.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officalwebsite/src/assets/images/huanyou.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officalwebsite/src/assets/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officalwebsite/src/assets/images/logo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officalwebsite/src/assets/images/logo3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officalwebsite/src/assets/images/step1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officalwebsite/src/assets/images/step2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officalwebsite/src/assets/images/step3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officalwebsite/src/assets/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officalwebsite/src/components/common/codeRow.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officalwebsite/src/components/common/footer.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officalwebsite/src/components/forgetPassword.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officalwebsite/src/components/login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officalwebsite/src/components/register.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/officalwebsite/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/.postcssrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/build/build.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/build/check-versions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/build/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/build/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/build/vue-loader.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/build/webpack.base.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/build/webpack.dev.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/build/webpack.prod.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/config/dev.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/config/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/config/prod.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/config/test.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/src/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/src/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/static/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/test/e2e/custom-assertions/elementCount.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/test/e2e/nightwatch.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/test/e2e/runner.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/test/e2e/specs/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/test/unit/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/offwebsite/test/unit/specs/HelloWorld.spec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/officalwebsite/src/components/register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/officalwebsite/src/components/register.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -71,9 +21,10 @@
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -137,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/officalwebsite/src/assets/reset.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="931">
-              <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+              <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -145,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/officalwebsite/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="266">
+              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -154,8 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/officalwebsite/src/components/forgetPassword.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1121">
-              <caret line="34" column="58" lean-forward="true" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
+            <state relative-caret-position="646">
+              <caret line="34" column="58" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
               </folding>
@@ -166,8 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/officalwebsite/src/components/login.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="144" column="3" lean-forward="true" selection-start-line="144" selection-start-column="3" selection-end-line="144" selection-end-column="3" />
+            <state relative-caret-position="2736">
+              <caret line="144" column="3" selection-start-line="144" selection-start-column="3" selection-end-line="144" selection-end-column="3" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#el-row#0;n#el-tabs#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
               </folding>
@@ -179,7 +130,7 @@
         <entry file="file://$PROJECT_DIR$/officalwebsite/src/components/common/codeRow.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
-              <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -190,12 +141,6 @@
             <state relative-caret-position="532">
               <caret line="82" column="30" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
               <folding>
-                <element signature="n#style#0;n#p#0;n#label#13;n#form#0;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#p#0;n#label#13;n#form#0;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#0;n#label#13;n#form#0;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#label#13;n#form#1;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#p#0;n#label#13;n#form#1;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#0;n#label#13;n#form#1;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#textarea#0;n#label#11;n#form#2;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#label#12;n#form#2;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#label#12;n#form#2;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -213,7 +158,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/officalwebsite/src/router/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
+            <state relative-caret-position="323">
               <caret line="22" column="22" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="22" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
@@ -296,10 +241,12 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/officalwebsite/package.json" />
+      <path value="$PROJECT_DIR$/offwebsite/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="300" />
+    <option name="x" value="1063" />
+    <option name="y" value="60" />
     <option name="width" value="1625" />
     <option name="height" value="1032" />
   </component>
@@ -426,6 +373,7 @@
       <workItem from="1542078374814" duration="16190000" />
       <workItem from="1542158890109" duration="15416000" />
       <workItem from="1542244867041" duration="18505000" />
+      <workItem from="1542332769289" duration="607000" />
     </task>
     <task id="LOCAL-00001" summary="创建项目">
       <created>1541997830362</created>
@@ -438,10 +386,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53827000" />
+    <option name="totallyTimeSpent" value="54434000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="300" y="0" width="1625" height="1032" extended-state="0" />
+    <frame x="1063" y="60" width="1625" height="1032" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13043478" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -506,9 +455,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="e#140#161#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -528,7 +474,7 @@
     <entry file="file://$PROJECT_DIR$/officalwebsite/src/assets/images/logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/officalwebsite/src/assets/images/huanyou.png">
+    <entry file="file://$PROJECT_DIR$/officalwebsite/src/assets/images/add.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/officalwebsite/index.html">
@@ -538,9 +484,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/officalwebsite/src/assets/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/officalwebsite/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/officalwebsite/src/components/forgetPassword.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="58" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/officalwebsite/src/components/login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2736">
+          <caret line="144" column="3" selection-start-line="144" selection-start-column="3" selection-end-line="144" selection-end-column="3" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#el-row#0;n#el-tabs#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/officalwebsite/src/components/common/codeRow.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/officalwebsite/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
+        <state relative-caret-position="323">
           <caret line="22" column="22" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="22" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
@@ -548,48 +535,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/officalwebsite/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/officalwebsite/src/components/common/codeRow.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/officalwebsite/src/components/login.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="144" column="3" lean-forward="true" selection-start-line="144" selection-start-column="3" selection-end-line="144" selection-end-column="3" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#el-row#0;n#el-tabs#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/officalwebsite/src/assets/reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/officalwebsite/src/components/forgetPassword.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1121">
-          <caret line="34" column="58" lean-forward="true" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/officalwebsite/src/assets/images/add.png">
+    <entry file="file://$PROJECT_DIR$/officalwebsite/src/assets/images/huanyou.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/officalwebsite/src/components/register.vue">

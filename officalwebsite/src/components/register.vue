@@ -81,7 +81,6 @@
           <label><i>*</i>家属联系方式：<input type="text" placeholder="请填写常用的手机号"></label>
           <label><i>*</i>其他联系方式：<input type="text" placeholder="请填写微信号、QQ号"></label>
           <label><i>*</i>现居住地：
-            <!--<el-input type="textarea"></el-input>-->
             <textarea  placeholder="请如实填写详细住址，例如街道、单元、楼层和门牌号等信息" style="height: 66px;width:326px;line-height: 24px;padding: 12px;"/>
           </label>
           <label style="overflow:hidden;vertical-align: middle"><i>*</i><span style="line-height: 160px">病例资料图片：</span>
