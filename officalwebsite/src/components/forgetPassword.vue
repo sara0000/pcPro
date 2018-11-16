@@ -1,56 +1,49 @@
 <template>
   <div class="registerContainer">
     <header>
-      <div class="toLogin"><img src="../assets/images/logo2.png" alt="患友家"><div class="right">已有账号，<a href=""><strong>马上登录</strong></a></div></div>
       <div class="stepSign">
-        <img src="../assets/images/step1.jpg" alt="" style="display: none;">
-        <img src="../assets/images/step2.png" alt="" style="display: none">
-        <img src="../assets/images/step3.png" alt="">
+        <img src="../assets/images/logo3.png" alt="患友家">
       </div>
     </header>
     <div class="title">
-      <h2 style="display: none;">注册会员</h2>
-      <h2 style="display: none;">完善资料</h2>
-      <h2>注册成功</h2>
+      <h2>账户安全</h2>
     </div>
     <div class="registerBox">
-      <div id="resigterStep1" style="display: none">
-        <el-form :model="registerForm" status-icon   class="demo-ruleForm">
-          <el-form-item  prop="pass">
-            <el-input type="text" v-model="registerForm.pass" autocomplete="off" placeholder="姓名"></el-input>
-          </el-form-item>
-          <el-form-item  prop="checkPass">
-            <el-input type="password" v-model="registerForm.checkPass" autocomplete="off" placeholder="请输入手机号"></el-input>
-          </el-form-item>
-          <el-form-item >
-            <div class="codeBox">
-              <div class="left"><el-input v-model="registerForm.region" placeholder="请输入短信验证码" class="codeText"></el-input></div>
-              <div class="right"><button  class="code">获取验证码</button></div>
-            </div>
-          </el-form-item>
-          <el-form-item  prop="pass">
-            <el-input type="text" v-model="registerForm.pass" autocomplete="off" placeholder="设置密码"></el-input>
-            <p>6-20位字符，由字母/数字/符号两种以上组合。</p>
-          </el-form-item>
-          <button @click="submitForm('registerForm')" class="nextBtn">下一步</button>
-        </el-form>
+      <div class="findPass"  v-if="!resetFlag" >
+        <h4>找回密码</h4>
+        <div id="findStep1">
+          <el-form :model="registerForm" status-icon   class="demo-ruleForm">
+            <el-form-item >
+              <el-input v-model="registerForm.name" placeholder="手机号"></el-input>
+            </el-form-item>
+            <el-form-item >
+              <el-row justify="space-between" class="codeRow"><el-col :span="16"><el-input v-model="registerForm.region" placeholder="请输入短信验证码"></el-input></el-col> <el-col :span="8"><button  class="code">获取验证码</button></el-col></el-row>
+            </el-form-item>
+            <el-form-item  prop="pass">
+              <el-input type="text" v-model="registerForm.pass" autocomplete="off" placeholder="设置密码"></el-input>
+            </el-form-item>
+            <el-form-item  prop="pass">
+              <el-input type="text" v-model="registerForm.pass2" autocomplete="off" placeholder="确认密码"></el-input>
+            </el-form-item>
+           <div class="nextBtn"><a @click="resetFlag=1" >重置密码</a></div>
+          </el-form>
+        </div>
       </div>
-      <div id="resigterStep2">
-        <p>您已注册成功，患友家客服人员会在<span>1-3</span>个工作日内联系您，请耐心等候！</p>
-        <p>您也可以关注<strong>“患友家”</strong>公众号进行信息实时查询！</p>
-        <div class="qrCode">
-          <p>扫描二维码关注吧！</p>
-          <img src="../assets/images/QRcode.jpg" alt="患友家">
+      <div class="findSuccess"  v-if="resetFlag">
+        <h4 class="">找回密码</h4>
+        <div id="findStep2">
+        <p style="margin-top: 50px">你已经成功设置密码，请使用新密码登录</p>
+          <div class="nextBtn"><router-link to="/login">马上登录</router-link></div>
         </div>
       </div>
     </div>
+
   </div>
 </template>
 
 <script>
-  import codeRow from './common/codeRow'
 export default {
-  name: 'Register',
+  name: 'forgetPassword',
   data () {
     return {
       registerForm: {
@@ -58,10 +51,13 @@ export default {
         checkPass: '',
         age: ''
       },
+      resetFlag:0
     }
   },
-  components:{
-    codeRow
+  methods:{
+    submitForm(){
+      this.data.resetFlag=1;
+    }
   }
 }
 </script>
@@ -114,32 +110,43 @@ export default {
     margin: 0 auto;
     padding:35px 248px;
     background: #d5efff;
+    h4{
+      margin-bottom: 24px;
+    }
+      h4,p{
+        font-size: 22px;
+        color: $darkgrey;
+      }
+    p{
+      line-height: 32px;
+      margin-top: 40px;
+    }
 
   }
   /*下一步按钮*/
-  .nextBtn{
-    width: 120px;
-    height: 48px;
-    line-height: 48px;
+  .nextBtn a{
+    padding: 16px 42px;
     font-size: 18px;
     color:#fff;
     background:$darkColor ;
     border: 1px solid $darkColor;
     outline: 0;
     border-radius: 10px;
+    display: inline-block;
+    margin-top: 68px;
   }
   /*验证码按钮*/
   .code{
     color: #444344;
     font-size: 18px;
-    width: 158px;
+    width: 134px;
     line-height: 56px;
     background:$color;
     border: 1px solid $color;
     border-bottom-right-radius: 6px;
     border-top-right-radius: 6px;
   }
-  .code:hover, .nextBtn:hover{
+  .code:hover, .nextBtn a:hover{
     cursor:pointer;
   }
  #resigterStep1  p{
@@ -152,8 +159,8 @@ export default {
       width: 303px;
       color:#444344 ;
       line-height: 38px;
-      margin-bottom: 20px;
-      margin: 0 auto;
+
+      margin: 0 auto 20px;
     }
     span{
       color:#fe0000;
@@ -162,6 +169,9 @@ export default {
       color: #fe0000;
       font-size: 22px;
     }
+  }
+  .findSuccess{
+    padding-bottom: 228px;
   }
   .qrCode{
     margin-top: 60px;
