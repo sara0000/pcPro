@@ -11,14 +11,19 @@ export default {
 </script>
 
 <style lang="scss">
+  html,body{
+    height: 100%;
+  }
 $color:#ffcac8;
 $darkgrey:#444344;
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  height: 100%;
 }
 .el-input__inner{
   height: 46px;

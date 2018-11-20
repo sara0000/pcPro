@@ -6,14 +6,15 @@
       <el-tabs v-model="activeName" @tab-click="handleClick">
         <!--密码登录-->
         <el-tab-pane label="密码登录" name="first">
-          <el-form  :model="pswordLabelAlign">
+          <el-form  :model="pswordLabelAlign" :rules="rules" ref="pswordLabelAlign">
             <el-form-item >
               <el-input v-model="pswordLabelAlign.name" placeholder="手机号"></el-input>
             </el-form-item>
             <el-form-item label="">
-              <el-input v-model="pswordLabelAlign.region " placeholder="密码"></el-input>
+              <el-input v-model="pswordLabelAlign.pass " placeholder="密码"></el-input>
             </el-form-item>
           </el-form>
+          <i v-model="pswordLabelAlign.type"></i>
         </el-tab-pane>
         <!--短信登录-->
         <el-tab-pane label="短信登录" name="second">
@@ -22,18 +23,21 @@
               <el-input v-model="msgLabelAlign.name" placeholder="手机号"></el-input>
             </el-form-item>
             <el-form-item >
-              <el-row justify="space-between" class="codeRow"><el-col :span="16"><el-input v-model="msgLabelAlign.region" placeholder="请输入短信验证码"></el-input></el-col> <el-col :span="8"><button  class="code">获取验证码</button></el-col></el-row>
+              <el-row justify="space-between" class="codeRow"><el-col :span="16"><el-input v-model="msgLabelAlign.code" placeholder="请输入短信验证码"></el-input></el-col> <el-col :span="8"><button  class="code">获取验证码</button></el-col></el-row>
             </el-form-item>
           </el-form>
+          <i v-model="msgLabelAlign.type"></i>
         </el-tab-pane>
         <el-row class="fogetBox">
           <router-link to="/register">注册</router-link><span style="padding:0 4px;float: right">|</span> <router-link to="/forgetPassword">忘记密码?</router-link>
         </el-row>
         <el-row>
-          <el-button  @click="submitForm('dynamicValidateForm')" class="loginBtn">登录</el-button>
+          <el-button  @click="submitForm()" class="loginBtn">登录</el-button>
         </el-row>
       </el-tabs>
+
     </div>
+
   </div>
 
 </template>
@@ -44,17 +48,30 @@ export default {
   name: 'Login',
   data () {
     return {
+      errors: [],
       activeName: 'first',
       labelPosition: 'right',
       pswordLabelAlign: {
         name: '',
-        region: '',
+        pass: '',
         type: ''
       },
       msgLabelAlign: {
         name: '',
-        region: '',
+        pass: '',
         type: ''
+      },
+      rules: {
+        name: [
+          { required: true, message: '请输入活动名称', trigger: 'blur' },
+          { min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur' }
+        ],
+        pass: [
+          { required: true, message: '请选择活动区域', trigger: 'change' }
+        ],
+        type: [
+          { type: 'array', required: true, message: '请至少选择一个活动性质', trigger: 'change' }
+        ]
       }
     }
   },
@@ -62,7 +79,33 @@ export default {
     //面板切换
     handleClick(tab, event) {
       console.log(tab, event);
+    },
+    checkForm: function () {
+      if (this.pswordLabelAlign.name && this.pswordLabelAlign.pass) {
+        this.submitForm();
+        return true;
+      }
+      if (!this.pswordLabelAlign.name) {
+        this.pswordLabelAlign.type='请输入用户名'
+      }
+      if (!this.pswordLabelAlign.pass) {
+        this.pswordLabelAlign.type='请输入密码'
+      }
+      // e.preventDefault();
+    },
+    submitForm(formName){
+      //登录API
+      // this.axios.post('/api/login',this.pswordLabelAlign).then(function (res) {
+      //   console.log(res);
+      //   //页面跳转
+      //   this.$router.push({ name: 'user', params: { userId: 123 }})
+      // }).catch(function (error) {
+      //   console.log(error);
+      // });
+
+     this.$router.push({ path: 'home/user', params: { userId: this.pswordLabelAlign.name }})
     }
+
   }
 }
 </script>
