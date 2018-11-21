@@ -4,7 +4,12 @@
         <li>
           link1
           <ul>
-            <li><router-link to="/home/user">link1.1</router-link></li>
+            <li>
+                  <router-link to="/home/user">
+                  link1.1
+                </router-link>
+              <button v-on:click="sendMsg">同级组件传值</button>
+            </li>
             <li><router-link to="/home/profile">link1.2</router-link></li>
             <li><router-link to="/home/posts">link1.3</router-link></li>
             <li><router-link to="/">link1.4</router-link></li>
@@ -42,8 +47,14 @@
 </template>
 
 <script>
+  import bus from '../../assets/eventBus'
     export default {
-        name: "sideBar"
+        name: "sideBar",
+      methods:{
+          sendMsg(){
+            bus.$emit("userEvent",'this message is from sideBar')
+          }
+      }
     }
 </script>
 

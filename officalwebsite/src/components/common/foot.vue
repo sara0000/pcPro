@@ -1,14 +1,29 @@
 <template>
     <div>
       <ul>
-        <li>Copyright © 2018 上海皓推信息科技有限公司 沪ICP备17026965号-1</li>
+        <li v-for="company in linkCompany">{{company}}</li>
       </ul>
+      message from sideBar:{{msg}}
     </div>
 </template>
 
 <script>
+  import bus from '../../assets/eventBus';
     export default {
-        name: "foot"
+        name: "foot",
+      props:['linkCompany'],
+     data(){
+       return {
+         msg:''
+       }
+     },
+      mounted(){
+          var self=this;
+        bus.$on("userEvent",function (msg) {
+          self.msg=msg;
+          console.log(msg);
+        })
+      }
     }
 </script>
 

@@ -44,6 +44,8 @@
 
 <script>
 
+import router from "../router";
+
 export default {
   name: 'Login',
   data () {
@@ -75,36 +77,40 @@ export default {
       }
     }
   },
+  //一个数据受多个数据影响
+  computed:{
+    lufei_Name(){
+      return this.pswordLabelAlign.name+this.pswordLabelAlign.pass
+    }
+  },
+  //监听输入框
+  watch:{
+    pswordLabelAlign :{
+      handler(curVal,oldVal){
+        console.log(curVal);
+
+      },
+      deep:true,
+    }
+  },
   methods: {
     //面板切换
     handleClick(tab, event) {
       console.log(tab, event);
     },
-    checkForm: function () {
-      if (this.pswordLabelAlign.name && this.pswordLabelAlign.pass) {
-        this.submitForm();
-        return true;
-      }
-      if (!this.pswordLabelAlign.name) {
-        this.pswordLabelAlign.type='请输入用户名'
-      }
-      if (!this.pswordLabelAlign.pass) {
-        this.pswordLabelAlign.type='请输入密码'
-      }
-      // e.preventDefault();
-    },
     submitForm(formName){
-      //登录API
-      // this.axios.post('/api/login',this.pswordLabelAlign).then(function (res) {
-      //   console.log(res);
-      //   //页面跳转
-      //   this.$router.push({ name: 'user', params: { userId: 123 }})
-      // }).catch(function (error) {
-      //   console.log(error);
-      // });
-
-     this.$router.push({ path: 'home/user', params: { userId: this.pswordLabelAlign.name }})
-    }
+      window.localStorage.setItem('token','12323');
+      localStorage.setItem('username',this.lufei_Name);
+      console.log(localStorage.getItem('username'));
+      // 登录API
+      this.axios.post('/api/login',this.pswordLabelAlign).then(res=>{
+       // console.log(res);
+        //页面跳转
+        this.$router.push({ path: 'home/user', params: { userId: 123 }})
+      }).catch(function (error) {
+        console.log(error);
+      });
+    },
 
   }
 }
@@ -116,6 +122,10 @@ export default {
   $darkgrey:#444344;
   $white:#fff;
   $size20:20px;
+  @mixin border-radiusCss($num:0px){
+    border-bottom-right-radius:$num;
+    border-top-right-radius: $num;
+  }
   input{
     font-size: 18px;
   }
@@ -178,8 +188,7 @@ export default {
     font-size: 18px;
     height: 46px;
     line-height: 46px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+   @include border-radiusCss(4px);
     cursor: pointer;
        &:hover{
           background: #ff8680;
@@ -191,9 +200,16 @@ export default {
   $color: #ffcac8;
   $darkgrey:#444344;
   $grey:#999999;
+  @mixin border-px{
+    border: 1px solid $color;
+  }
+  @mixin border-radiusCss($num:0px){
+    border-bottom-right-radius:$num;
+    border-top-right-radius: $num;
+  }
   .loginBox{
     .el-input__inner{
-      border:1px solid $color !important;
+     @include border-px;
       font-size: 18px;
     }
     .el-tabs__item{
@@ -209,17 +225,18 @@ export default {
 
     }
     .loginBtn.el-button{
-      border: 1px solid $color;
+     @include border-px;
     }
-    .codeRow .el-input__inner{
-      border-bottom-right-radius: 0;
-      border-top-right-radius: 0;
+    .codeRow {
+      .el-input__inner{
+       @include border-radiusCss;
+      }
+      .el-button{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left: 0;
+      }
     }
-    .codeRow .el-button{
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      border-left: 0;
-  }
   }
 
 </style>
